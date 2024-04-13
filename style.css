@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('basketball-background.jpg'); /* Yeni arka plan görüntüsü */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Başlık ve kutuları yatay olarak sıralar */
+    align-items: center; /* Sayfaya göre ortalar */
+    justify-content: center; /* Dikeyde ve yatayda merkezler */
+    height: 100vh; /* Ekran yüksekliği kadar alanı kaplar */
+}
+
+h1 {
+    font-size: 48px; /* Başlık font boyutunu büyütür */
+    font-family: "Arial Black", sans-serif; /* Farklı bir font kullanır */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Başlık için gölge efekti */
+    background-color: transparent; /* Başlık arka plan rengi */
+    padding: 20px;
+    width: 100%; /* Sayfa genişliğini kaplar */
+    position: fixed; /* Sabit bir pozisyonda olmasını sağlar */
+    top: 0; /* Sayfanın üst kısmına hizalar */
+    left: 0; /* Sayfanın sol kısmına hizalar */
+    z-index: 1000; /* Diğer içeriğin önünde olmasını sağlar */
+    margin-bottom: 20px; /* Kutulara biraz daha yaklaştırır */
+}
+
+.team-container {
+    display: flex; /* Takım kutularını yatay olarak hizalar */
+    flex-wrap: wrap; /* Kutuların sığmadığı durumlarda alt satıra geçmesini sağlar */
+    align-items: center; /* Sayfaya göre ortalar */
+    justify-content: center; /* Yatayda merkezler */
+    margin-top: 40px; /* Başlığın altında boşluk bırakır */
+}
+
+.team {
+    width: 250px; /* Kutu genişliğini büyütür */
+    height: 350px; /* Kutu yüksekliğini büyütür */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Logoları en üst kısma hizalar */
+}
+
+.team.lakers {
+    background: linear-gradient(to bottom right, #552583, #FDB927);
+}
+
+.team.chicago-bulls {
+    background: linear-gradient(to bottom right, #000000, #CE1141);
+}
+
+.team h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0; /* Başlığı kutunun en üst kısmına hizalar */
+}
+
+.team p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.team img {
+    width: 100px;
+    height: auto;
+    margin: auto; /* Logoyu kutu içinde ortalar */
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Kutuların altında boşluk bırakır */
+}
+
+.button-container button {
+    font-size: 18px;
+    padding: 15px 30px; /* Buton boyutlarını büyütür */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Butonların arasında boşluk bırakır */
+}
+
+.button-container button:hover {
+    opacity: 0.8;
+}
+
+.button-container .reset-button {
+    margin-left: 20px; /* Reset butonunu diğer butonlardan ayırır */
+}
+
+.image-between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Kutular arasında boşluk bırakır */
+}
+
+.image-between img {
+    width: 300px;
+    height: auto;
+}

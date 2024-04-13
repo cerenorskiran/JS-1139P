@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketbol Maçı Skor Takibi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basketbol Maçı Skor Takibi</h1>
+        <div class="team lakers">
+            <h2>Lakers</h2>
+            <img src="lakers-logo.png" alt="Lakers Logo">
+            <p>Sayı: <span id="teamAScore">0</span></p>
+            <button onclick="incrementScore('teamA')">Sayı Ekle</button>
+            <button onclick="decrementScore('teamA')">Sayı Azalt</button>
+            <button onclick="setScore('teamA')">Sayı Atama</button>
+            <button onclick="resetScore('teamA')">Skoru Sıfırla</button>
+        </div>
+        <div class="team chicago-bulls">
+            <h2>Chicago Bulls</h2>
+            <img src="chicago-bulls-logo.png" alt="Chicago Bulls Logo">
+            <p>Sayı: <span id="teamBScore">0</span></p>
+            <button onclick="incrementScore('teamB')">Sayı Ekle</button>
+            <button onclick="decrementScore('teamB')">Sayı Azalt</button>
+            <button onclick="setScore('teamB')">Sayı Atama</button>
+            <button onclick="resetScore('teamB')">Skoru Sıfırla</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
